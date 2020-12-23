@@ -1,0 +1,8 @@
+{
+  "name": "terrible_powers",
+  "vapid": {},
+  "scripts": {
+    "start": "vapid start .",
+    "build": "vapid build ."
+  }
+}
