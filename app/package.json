@@ -4,5 +4,10 @@
   "scripts": {
     "start": "vapid start .",
     "build": "vapid build ."
+  },
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.1"
   }
 }

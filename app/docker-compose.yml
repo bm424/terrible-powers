@@ -4,8 +4,10 @@ services:
   app:
     build:
       context: .
+      args:
+        - NODE_ENV=development
     volumes:
       - ./data:/usr/src/app/data
-      - ./www:/usr/src/app/www
+      - ./www/index.html:/usr/src/app/www/index.html
     ports:
       - "3000:3000"
