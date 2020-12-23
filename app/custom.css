@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Komika;
+  src: url(/fonts/KOMIKAGL.ttf);
+}
+
+@font-face {
+  font-family: MulledWineSeason;
+  src: url(/fonts/MulledWineSeason-Medium.otf);
+}

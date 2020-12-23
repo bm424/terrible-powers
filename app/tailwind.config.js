@@ -24,7 +24,15 @@ module.exports = {
     './www/*.html',
   ],
   extend: {},
-  theme: {},
+  theme: {
+    extend: {
+
+    fontFamily: {
+      title: ["Komika", ...sans],
+      body: ["MulledWineSeason", ...sans],
+    },
+    }
+  },
   variants: {},
   plugins: [],
 }
