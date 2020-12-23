@@ -11,6 +11,21 @@
 </head>
 
 <body>
-  <h1>A Terrible Start</h1>
+
+  <ul>
+    {{#section powers}}
+    <li>
+      <div>
+        <div>
+          <img src="{{image type=image tag=false width=120 height=120}}" alt="A photo of {{name}}">
+        </div>
+        <div>
+          <h2>{{name}}</h2>
+          {{description type=html}}
+        </div>
+      </div>
+    </li>
+    {{/section}}
+  </ul>
 </body>
 </html>
