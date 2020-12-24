@@ -8,10 +8,6 @@ services:
         - NODE_ENV=production
     volumes:
       - ./data/app:/usr/src/app/data
-    ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=production
     networks:
       - app-network
 
