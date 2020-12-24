@@ -7,9 +7,8 @@ RUN npm install
 
 COPY ./tailwind.config.js /usr/src/app/tailwind.config.js
 COPY ./custom.css /usr/src/app/custom.css
-RUN npx tailwindcss-cli@latest build ./custom.css -c ./tailwind.config.js -o ./www/stylesheets/site.pack.scss
-
 COPY ./www /usr/src/app/www
+RUN npx tailwindcss-cli@latest build ./custom.css -c ./tailwind.config.js -o ./www/stylesheets/site.pack.scss
 
 RUN mkdir -p /usr/src/app/data
 EXPOSE 3000
