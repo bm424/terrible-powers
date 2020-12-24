@@ -20,9 +20,20 @@ const serif = [
 ]
 
 module.exports = {
-  purge: [
-    './www/*.html',
-  ],
+  purge: {
+    content: [
+      './www/*.html',
+    ],
+    options: {
+      'safelist': [
+        'bg-blue-400',
+        'bg-green-400',
+        'bg-yellow-400',
+        'bg-purple-400',
+        'bg-pink-400',
+      ]
+    }
+  },
   extend: {},
   theme: {
     extend: {
