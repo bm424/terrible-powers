@@ -11,3 +11,7 @@
   font-family: MulledWineSeason;
   src: url(/fonts/MulledWineSeason-Medium.otf);
 }
+
+.image-container {
+  height: 150px;  /* This is to ensure masonry knows the correct height */
+}
